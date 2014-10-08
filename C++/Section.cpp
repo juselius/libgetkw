@@ -328,7 +328,7 @@ bool Section::has_tag(const string &b) const {
 
 void Section::print() const
 {
-	cout << repr << endl;
+	cout << repr(cout) << endl;
 }
 
 ostream &Section::repr(ostream &o) const

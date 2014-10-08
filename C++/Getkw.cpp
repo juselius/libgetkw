@@ -84,7 +84,7 @@ void Getkw::setVerbose(bool flag) {
 
 void Getkw::print() const
 {
-	cout << repr << endl;
+	cout << repr(cout) << endl;
 }
 
 ostream &Getkw::repr(ostream &o) const
