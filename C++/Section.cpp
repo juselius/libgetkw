@@ -18,7 +18,7 @@ if (A.type() == typeid(const Keyword< T > *))
 #define ANY_TO_CONST_KEY_PTR(A, T) \
 boost::any_cast<const Keyword< T > *>(A)
 
-#define PRINT_FUNC_NAME cout << "@ Section::" << __func__ << endl;
+#define PRINT_FUNC_NAME std::cout << "@ Section::" << __func__ << std::endl;
 
 using namespace std;
 
@@ -328,7 +328,7 @@ bool Section::has_tag(const string &b) const {
 
 void Section::print() const
 {
-	cout << repr(cout) << endl;
+	cout << &repr(cout) << endl;
 }
 
 ostream &Section::repr(ostream &o) const

@@ -107,7 +107,7 @@ public:
 	}
 
 	virtual void print() const {
-		std::cout << repr(std::cout, val) << std::endl;
+		std::cout << &repr(std::cout, val) << std::endl;
 	}
 
 
